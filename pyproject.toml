@@ -42,9 +42,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/itab-migration"
-Repository = "https://github.com/yourusername/itab-migration"
-Issues = "https://github.com/yourusername/itab-migration/issues"
+Homepage = "https://github.com/Tatajiang/itab-migration"
+Repository = "https://github.com/Tatajiang/itab-migration"
+Issues = "https://github.com/Tatajiang/itab-migration/issues"
 
 [project.scripts]
 itab-migration = "itab_migration.cli:main"
