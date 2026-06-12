@@ -25,7 +25,7 @@
 ## 安装
 
 ```bash
-git clone https://github.com/yourusername/itab-migration.git
+git clone https://github.com/Tatajiang/itab-migration.git
 cd itab-migration
 pip install -r requirements.txt
 ```
