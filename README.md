@@ -242,3 +242,5 @@ itab-migration/
 ---
 
 > 本项目由 [TataJiang](https://github.com/Tatajiang) 与 MiMo Code Agent 协作开发。
+>
+> 模型：[MiMo v2.5 Pro](https://github.com/XiaomiMiMo/MiMo)
