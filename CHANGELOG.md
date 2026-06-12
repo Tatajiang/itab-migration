@@ -1,155 +1,133 @@
-# Changelog
+# 更新日志
 
-All notable changes to this project will be documented in this file.
+本项目所有重要变更都将记录在此文件中。
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
+本项目遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
 
-## [Unreleased]
+## [未发布]
 
-### Added
-- Nothing yet
+### 新增
+- 暂无
 
-### Changed
-- Nothing yet
+### 变更
+- 暂无
 
-### Deprecated
-- Nothing yet
+### 废弃
+- 暂无
 
-### Removed
-- Nothing yet
+### 移除
+- 暂无
 
-### Fixed
-- Nothing yet
+### 修复
+- 暂无
 
-### Security
-- Nothing yet
+### 安全
+- 暂无
 
 ## [1.2.0] - 2026-06-12
 
-### Added
-- Icon caching system with SQLite database
-- Async bookmark validation with progress bar
-- Support for multiple browser formats (Chrome, Firefox, Edge)
-- Export to multiple formats (Markdown, CSV, JSON, OPML)
-- Cache management commands (--clear-cache, --cache-stats)
+### 新增
+- 图标缓存系统（SQLite 数据库）
+- 异步书签验证（支持进度条）
+- 支持多种浏览器格式（Chrome、Firefox、Edge）
+- 多格式导出（Markdown、CSV、JSON、OPML）
+- 缓存管理命令（`--clear-cache`、`--cache-stats`）
 
-### Changed
-- Improved CLI with more options
-- Better error handling for validation
+### 变更
+- 改进命令行接口，增加更多选项
+- 优化验证的错误处理
 
-### Features
-- **Cache Module**: Local icon cache using SQLite
-- **Validator Module**: Async bookmark URL validation
-- **Exporters Module**: Multi-format export support
+### 功能模块
+- **缓存模块**：基于 SQLite 的本地图标缓存
+- **验证模块**：异步书签 URL 验证
+- **导出模块**：多格式导出支持
 
 ## [1.1.0] - 2026-06-12
 
-### Added
-- Async icon downloading for better performance
-- Progress bar for long-running operations
-- Configuration file support (`config.json`)
-- Bookmark deduplication
-- Background image download for portal page
-- Beautiful portal HTML page with bookmark cards
+### 新增
+- 异步图标下载，提升性能
+- 长时间操作的进度条显示
+- 配置文件支持（`config.json`）
+- 书签去重功能
+- 导航页面背景图片下载
+- 精美的书签导航页面（带卡片布局）
 
-### Changed
-- Improved download performance with concurrent requests
-- Enhanced CLI with progress display
-- Better error handling for network issues
+### 变更
+- 并发请求提升下载性能
+- 增强命令行进度显示
+- 优化网络错误处理
 
-### Features
-- **Async Downloader**: Concurrent icon downloads using asyncio
-- **Progress Bar**: Real-time progress display with tqdm
-- **Config File**: JSON-based configuration file support
-- **Deduplication**: Automatic removal of duplicate bookmarks
+### 功能模块
+- **异步下载器**：基于 asyncio 的并发图标下载
+- **进度条**：基于 tqdm 的实时进度显示
+- **配置文件**：JSON 格式的配置文件支持
+- **去重功能**：自动移除重复书签
 
 ## [1.0.0] - 2026-06-11
 
-### Added
-- Initial release
-- Parse iTab backup files (`.itabdata`)
-- Download website icons from iTab CDN
-- Generate Chrome-compatible bookmark files (HTML & JSON)
-- Create icon mapping for bookmark customization
-- Command-line interface (`itab-migration` command)
-- Python API for programmatic usage
-- Support for multiple icon formats (SVG, PNG, ICO, WebP)
-- Rate limiting for icon downloads
-- Comprehensive error handling
-- Detailed logging
-- Examples and documentation
+### 新增
+- 首个正式版本
+- 解析 iTab 备份文件（`.itabdata`）
+- 从 iTab CDN 下载网站图标
+- 生成 Chrome 兼容的书签文件（HTML 和 JSON）
+- 创建图标映射，支持书签自定义
+- 命令行接口（`itab-migration` 命令）
+- Python API，支持编程调用
+- 支持多种图标格式（SVG、PNG、ICO、WebP）
+- 图标下载限速
+- 完善的错误处理
+- 详细日志记录
+- 示例和文档
 
-### Features
-- **Parser Module**: Extracts bookmark data from iTab backup files
-- **Downloader Module**: Downloads icons with retry logic and rate limiting
-- **Generator Module**: Creates Chrome-compatible bookmark files
-- **CLI Module**: Command-line interface with full option support
-- **Migrator Module**: High-level API for easy migration
+### 功能模块
+- **解析器模块**：从 iTab 备份文件提取书签数据
+- **下载器模块**：带重试和限速的图标下载
+- **生成器模块**：创建 Chrome 兼容的书签文件
+- **CLI 模块**：支持完整选项的命令行接口
+- **迁移器模块**：高级 API，简化迁移流程
 
-### Documentation
-- README with usage instructions
-- API reference documentation
-- Examples for basic and advanced usage
-- Contributing guidelines
+### 文档
+- README 使用说明
+- API 参考文档
+- 基础和高级用法示例
+- 贡献指南
 
-## [0.1.0] - 2026-06-11 (Pre-release)
+## [0.1.0] - 2026-06-11（预发布）
 
-### Added
-- Initial development version
-- Basic parsing functionality
-- Icon download capability
-- HTML bookmark generation
-
----
-
-## Release Notes
-
-### v1.0.0
-
-This is the first stable release of iTab Migration Tool. It provides a complete
-solution for migrating iTab bookmarks and icons to Chrome browser.
-
-**Key Features:**
-- Easy-to-use command-line interface
-- Python API for integration with other tools
-- Comprehensive error handling and logging
-- Support for all iTab bookmark formats
-- Automatic icon downloading and mapping
-
-**Breaking Changes:**
-- None (initial release)
-
-**Upgrade Guide:**
-- N/A (initial release)
+### 新增
+- 初始开发版本
+- 基础解析功能
+- 图标下载能力
+- HTML 书签生成
 
 ---
 
-## Version History
+## 版本历史
 
-| Version | Date | Description |
-|---------|------|-------------|
-| 1.2.0 | 2026-06-12 | Icon cache, validation, multi-format export |
-| 1.1.0 | 2026-06-12 | Async downloads, progress bar, config file, deduplication |
-| 1.0.0 | 2026-06-11 | First stable release |
-| 0.1.0 | 2026-06-11 | Pre-release |
-
----
-
-## Future Plans
-
-### v2.0.0 (Future)
-- [ ] GUI interface
-- [ ] Browser extension
-- [ ] Cloud sync support
-- [ ] Plugin system
+| 版本 | 日期 | 说明 |
+|------|------|------|
+| 1.2.0 | 2026-06-12 | 图标缓存、书签验证、多格式导出 |
+| 1.1.0 | 2026-06-12 | 异步下载、进度条、配置文件、去重 |
+| 1.0.0 | 2026-06-11 | 首个正式版本 |
+| 0.1.0 | 2026-06-11 | 预发布版本 |
 
 ---
 
-## Contributing
+## 未来计划
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
+### v2.0.0（计划中）
+- [ ] 图形界面（GUI）
+- [ ] 浏览器扩展
+- [ ] 云同步支持
+- [ ] 插件系统
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 贡献
+
+详见 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与本项目。
+
+## 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
