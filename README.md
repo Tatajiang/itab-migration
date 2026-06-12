@@ -238,3 +238,7 @@ itab-migration/
 ## 更新日志
 
 详见 [CHANGELOG.md](CHANGELOG.md)。
+
+---
+
+> 本项目由 [TataJiang](https://github.com/Tatajiang) 与 MiMo Code Agent 协作开发。
